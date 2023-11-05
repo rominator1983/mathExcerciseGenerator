@@ -1,6 +1,6 @@
 ﻿var random = new Random();
 
-for (var i = 0; i < 50; i++)
+for (var i = 0; i < 70; i++)
 {
     var excerciseType = random.Next(100);
 
