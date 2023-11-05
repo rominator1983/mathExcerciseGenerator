@@ -3,13 +3,18 @@
 for (var i = 0; i < 50; i++)
 {
     var excerciseType = random.Next(100);
+
     if (excerciseType < 50)
     {
         // Addition
         var summand1 = random.Next(13);
         var summand2 = random.Next(13);
+        var summand3 = random.Next(6);
 
-        Console.WriteLine($"{summand1} + {summand2} =   ");
+        if (random.Next(100) > 90)
+            Console.WriteLine($"{summand1} + {summand2} + {summand3} =   ");
+        else
+            Console.WriteLine($"{summand1} + {summand2} =   ");
     }
     else if (excerciseType < 90)
     {
@@ -23,15 +28,5 @@ for (var i = 0; i < 50; i++)
         while (subtrahend > minuend);
 
         Console.WriteLine($"{minuend} - {subtrahend} =   ");
-    }
-    else
-    {
-        // Addition with multiple summands
-        var summand1 = random.Next(7);
-        var summand2 = random.Next(6);
-        var summand3 = random.Next(6);
-
-        Console.WriteLine($"{summand1} + {summand2} + {summand3} =   ");
-
     }
 }
